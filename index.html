@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAMMA SALON - Luxury Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- === Header & Navigation === -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>SHAMMA SALON</h1>
+                    <p class="tagline">Luxury Beauty Experience</p>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-spa"></i> Services</a></li>
+                    <li><a href="#booking" class="nav-link"><i class="fas fa-calendar-check"></i> My Bookings</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#howto" class="nav-link"><i class="fas fa-question-circle"></i> How to Book</a></li>
+                    <li><a href="#dashboard" class="nav-link"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#logout" class="nav-link logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === Hero Section === -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Ready for Your Transformation?</h2>
+                <p class="hero-subtitle">Experience luxury beauty treatments with our expert stylists. Book your appointment now!</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary"><i class="fas fa-eye"></i> VIEW ALL SERVICES</a>
+                    <a href="#booking" class="btn-secondary"><i class="fas fa-calendar-alt"></i> BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Quick Services === -->
+    <section class="quick-services">
+        <div class="container">
+            <h2 class="section-title">Popular Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair Cutting</h3>
+                    <div class="service-details">
+                        <span class="price">CMR 500.00</span>
+                        <span class="duration">30 min</span>
+                    </div>
+                    <button class="book-btn" data-service="Hair Cutting">BOOK NOW</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Hair Coloring</h3>
+                    <div class="service-details">
+                        <span class="price">CMR 600.00</span>
+                        <span class="duration">60 min</span>
+                    </div>
+                    <button class="book-btn" data-service="Hair Coloring">BOOK NOW</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Manicure</h3>
+                    <div class="service-details">
+                        <span class="price">CMR 300.00</span>
+                        <span class="duration">40 min</span>
+                    </div>
+                    <button class="book-btn" data-service="Manicure">BOOK NOW</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Makeup</h3>
+                    <div class="service-details">
+                        <span class="price">CMR 400.00</span>
+                        <span class="duration">45 min</span>
+                    </div>
+                    <button class="book-btn" data-service="Makeup">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === All Services Section === -->
+    <section class="all-services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Salon Services</h2>
+            <p class="section-subtitle">Premium beauty treatments by professional stylists</p>
+            
+            <!-- Hair Services -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3><i class="fas fa-cut"></i> HAIR SERVICES</h3>
+                    <span class="category-badge">5 Services</span>
+                </div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Hair Cutting</h4>
+                            <p>Professional haircut with styling consultation</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 500.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Hair Cutting">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Hair Styling</h4>
+                            <p>Professional styling for any occasion</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 400.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Hair Styling">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Hair Coloring</h4>
+                            <p>Full hair coloring with premium products</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 600.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 60 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Hair Coloring">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Hair Treatment</h4>
+                            <p>Deep conditioning and repair treatment</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 550.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Hair Treatment">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Hair Blowout</h4>
+                            <p>Professional blow dry and styling</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 350.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Hair Blowout">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nail Services -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3><i class="fas fa-hand-sparkles"></i> NAIL SERVICES</h3>
+                    <span class="category-badge">3 Services</span>
+                </div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Manicure</h4>
+                            <p>Full hand care and nail grooming</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 300.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 40 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Manicure">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Pedicure</h4>
+                            <p>Foot care and nail treatment</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 350.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Pedicure">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Nail Polish</h4>
+                            <p>Premium nail polish application</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 150.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 20 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Nail Polish">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Makeup Services -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3><i class="fas fa-magic"></i> MAKEUP SERVICES</h3>
+                    <span class="category-badge">2 Services</span>
+                </div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Basic Makeup</h4>
+                            <p>Everyday natural makeup look</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 400.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Basic Makeup">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Event Makeup</h4>
+                            <p>Special occasion makeup</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 700.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 90 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Event Makeup">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skincare Services -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3><i class="fas fa-spa"></i> SKINCARE SERVICES</h3>
+                    <span class="category-badge">2 Services</span>
+                </div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Facial Cleansing</h4>
+                            <p>Deep pore cleansing facial</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 450.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Facial Cleansing">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Face Masks</h4>
+                            <p>Therapeutic facial masks</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 350.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 40 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Face Masks">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hair Removal -->
+            <div class="service-category">
+                <div class="category-header">
+                    <h3><i class="fas fa-user-times"></i> HAIR REMOVAL</h3>
+                    <span class="category-badge">2 Services</span>
+                </div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Waxing</h4>
+                            <p>Full body waxing service</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 250.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Waxing">BOOK NOW</button>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4>Sugar Wax</h4>
+                            <p>Natural sugar wax hair removal</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="price">CMR 300.00</span>
+                            <span class="duration"><i class="far fa-clock"></i> 35 min</span>
+                        </div>
+                        <button class="book-service-btn" data-service="Sugar Wax">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Contact Section === -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <a href="mailto:202111205@gcet.edu.om" class="contact-link">
+                        <i class="fas fa-paper-plane"></i> 202111205@gcet.edu.om
+                    </a>
+                    <p>Email us for inquiries and support</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Number</h3>
+                    <a href="tel:+96891139659" class="contact-link">
+                        <i class="fas fa-phone"></i> +968 9113 9659
+                    </a>
+                    <p>Call us for appointments and bookings</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p class="contact-hours">
+                        <strong>Sunday - Thursday:</strong> 9:00 AM - 8:00 PM<br>
+                        <strong>Friday - Saturday:</strong> 10:00 AM - 6:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Booking Modal === -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-calendar-check"></i> Book Appointment</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="selectedService"><i class="fas fa-spa"></i> Selected Service:</label>
+                        <input type="text" id="selectedService" class="form-control" readonly>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="fullName" class="form-control" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phoneNumber"><i class="fas fa-phone"></i> Phone Number *</label>
+                            <input type="tel" id="phoneNumber" class="form-control" required placeholder="+968 XXX XXX XXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate"><i class="fas fa-calendar-alt"></i> Appointment Date *</label>
+                            <input type="date" id="appointmentDate" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="appointmentTime"><i class="fas fa-clock"></i> Appointment Time *</label>
+                            <select id="appointmentTime" class="form-control" required>
+                                <option value="">Select time slot</option>
+                                <option value="09:00">09:00 AM - 10:00 AM</option>
+                                <option value="10:00">10:00 AM - 11:00 AM</option>
+                                <option value="11:00">11:00 AM - 12:00 PM</option>
+                                <option value="12:00">12:00 PM - 01:00 PM</option>
+                                <option value="13:00">01:00 PM - 02:00 PM</option>
+                                <option value="14:00">02:00 PM - 03:00 PM</option>
+                                <option value="15:00">03:00 PM - 04:00 PM</option>
+                                <option value="16:00">04:00 PM - 05:00 PM</option>
+                                <option value="17:00">05:00 PM - 06:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests"><i class="fas fa-comment-alt"></i> Special Requests (Optional)</label>
+                        <textarea id="specialRequests" class="form-control" rows="3" placeholder="Any special requirements or notes..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-check-circle"></i> Confirm Booking
+                        </button>
+                        <button type="button" class="btn-cancel" id="cancelBooking">
+                            <i class="fas fa-times-circle"></i> Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- === Footer === -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>SHAMMA SALON</h3>
+                    <p>Luxury Beauty & Wellness Center</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SHAMMA SALON. All rights reserved.</p>
+                <p>Email: <a href="mailto:202111205@gcet.edu.om">202111205@gcet.edu.om</a> | Phone: <a href="tel:+96891139659">+968 9113 9659</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === JavaScript Files === -->
+    <script src="booking.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
